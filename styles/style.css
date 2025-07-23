@@ -1,7 +1,37 @@
-
-
-.container{
-    max-width: 1140px;
-    margin:  0 auto;
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
+
+
+/* Navbar Styles */
+.nabvar {
+  margin-top: 30px;
+}
+.navbar_link_item ul {
+  gap: 45px;
+  font-family: "Inter", sans-serif;
+}
+
+
+
+.right_sight_items {
+  gap: 45px;
+}
+
+.cart_section {
+  gap: 20px;
+}
+ul li:nth-child(1) {
+  color: rgb(37, 36, 50);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+}
+ul li:nth-child(2) {
+  color: rgb(137, 135, 161);
+}
+ul li:nth-child(3) {
+  color: rgb(137, 135, 161);
+}
