@@ -41,7 +41,6 @@ ul li:nth-child(3) {
 .hero_section {
 }
 .hero_section_left {
-  
 }
 .hero_content {
   margin-top: 30px;
@@ -51,7 +50,7 @@ ul li:nth-child(3) {
   height: 355px;
 }
 
-.hero_content, 
+.hero_content,
 .plants_header_section {
   color: rgba(0, 0, 0, 0.5);
   font-size: 22px;
@@ -60,40 +59,52 @@ ul li:nth-child(3) {
   font-size: 4rem;
 }
 
-
 /* Our Plants Section Styles */
 
-
-.card_1{
+.plants_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.plants_header_section p {
+  width: 60%;
+}
+.card_1 {
   width: 270px;
 }
-.card_name_with_price{
+.card_name_with_price {
   font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 10px;
+  color: rgb(17, 17, 17);
+}
+.card_name_with_price .price {
+  font-weight: 700;
+  color: rgb(17, 17, 17);
+}
+button {
+  width: 100%;
+  height: 50px;
+  background-color: #e95a08;
+  color: white;
   font-weight: 600;
   margin-top: 10px;
-  color: #111111;
-}
-
-button{
-  width: 100%;
-  height: 30px;
-  background-color: #E95A08;
-  color: white;
-  font-weight: 600px;
-  margin-top: 10px;
-  
 }
 
 
 
+/* Responsive (mobile-{max_width:576}) */
 
-/* Responsive Navbar (mobile-{max_width:576}) */
 
 @media screen and (max-width: 576px) {
-  .nabvar, .hero_section_left {
+  /* Public Style With Responsive */
+  .nabvar,
+  .hero_section_left,
+  .our_plants_section {
     width: 90%;
     margin: auto;
   }
+
+  /* Navbar Section Responsive */
   .navbar_link_item {
     display: none;
   }
@@ -114,9 +125,8 @@ button{
   }
   .hero_content p {
     font-size: 14px;
-    
   }
-  .hero_section_left{
+  .hero_section_left {
     order: 1;
   }
   .hero_section_right img {
@@ -124,5 +134,46 @@ button{
     height: 245px;
     float: inline-end;
     order: 2;
+  }
+
+  /* Our Plants And Card Section */
+  
+  .plants_header_section h1 {
+    font-size: 1.5rem;
+    margin-top: 65px;
+  }
+  .plants_header_section p{
+    font-size: 1rem;
+    width: 90%;
+    margin-top: 16px;
+  }
+  .plants_container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin-top: 30px;
+  
+  }
+
+  .card_1 {
+    width: 170px;
+  }
+
+  .card_name_with_price {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 10px;
+    color: rgb(17, 17, 17);
+  }
+  .card_name_with_price .price {
+    font-weight: 700;
+    color: rgb(17, 17, 17);
+  }
+  button {
+    width: 100%;
+    height: 45px;
+    background-color: #e95a08;
+    color: white;
+    font-weight: 600;
+    margin-top: 10px;
   }
 }
