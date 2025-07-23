@@ -3,18 +3,18 @@
   margin: 0 auto;
 }
 
-
-
 /* Navbar Styles */
 .nabvar {
   margin-top: 30px;
+}
+.logo img {
+  width: 135px;
+  height: 82px;
 }
 .navbar_link_item ul {
   gap: 45px;
   font-family: "Inter", sans-serif;
 }
-
-
 
 .right_sight_items {
   gap: 45px;
@@ -34,4 +34,20 @@ ul li:nth-child(2) {
 }
 ul li:nth-child(3) {
   color: rgb(137, 135, 161);
+}
+
+/* Responsive Navbar (mobile-{max_width:576}) */
+
+@media screen and (max-width: 576px) {
+  .nabvar{
+    width: 90%;
+    margin: 20px auto;
+  }
+    .navbar_link_item {
+    display: none;
+  }
+  .logo img {
+    width: 63px;
+    height: 38px;
+  }
 }
