@@ -117,7 +117,6 @@ button {
 }
 .content_of_flower {
   width: 540px;
-  height: 521px;
 }
 .flower_lover_content h1 {
   width: 80%;
@@ -151,7 +150,7 @@ button {
 }
 
 .letest_section_image_container img {
-  border-radius: 15px;
+  border-radius: 20px;
 }
 
 .left_letest_image {
@@ -170,20 +169,62 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  /* background-color: black;
-  opacity: .6; */
+}
+.latest_first_image,
+.latest_second_image {
+  width: 366.22px;
+  height: 206px;
 }
 
+.right_letest_image {
+  width: 750px;
+  height: 420px;
+}
 .content_of_right_image span {
   font-size: 2rem;
   font-weight: 700;
   color: white;
   font-family: "Noto Serif", serif;
-  
 }
 
 .content_of_right_image a {
   font-size: 2rem;
+  font-weight: 400;
+  text-decoration: underline;
+  color: white;
+}
+
+.latest_first_image {
+  position: relative;
+}
+.content_of_first_image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+.latest_second_image {
+  position: relative;
+}
+.content_of_second_image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+.content_of_first_image span,
+.content_of_second_image span {
+  color: rgb(255, 255, 255);
+  font-family: "Noto Serif", serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.content_of_first_image a,
+.content_of_second_image a {
   font-weight: 400;
   text-decoration: underline;
   color: white;
@@ -196,7 +237,8 @@ button {
   .nabvar,
   .hero_section_left,
   .our_plants_section,
-  .flower_lover_section {
+  .flower_lover_section,
+  .letest_deals_header p {
     width: 90%;
     margin: auto;
   }
@@ -295,5 +337,58 @@ button {
   }
   .trusted_seller_batch img {
     display: none;
+  }
+
+  /* Latest Deals section */
+
+  .letest_deals_header p {
+    width: 90%;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .letest_deals_header h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+  }
+  .letest_deals_header .deal {
+    font-size: 24px;
+  }
+  .letest_section_image_container {
+    flex-direction: column;
+    gap: 0px;
+    margin-top: 40px;
+  }
+
+  .main_letest_deals_container span {
+    font-size: 16px;
+  }
+  .main_letest_deals_container a {
+    font-size: 14px;
+  }
+
+  .latest_first_image,
+  .latest_second_image {
+    width: 320px;
+    height: 160px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .right_letest_image {
+    width: 320px;
+    height: 160px;
+    margin: auto;
+    margin-top: 18px;
+  }
+
+  .content_of_right_image{
+    width: 100%;
+    margin-top: 15px;
+  }
+  .content_of_first_image,
+  .content_of_second_image{
+    margin-top: 10px;
   }
 }
