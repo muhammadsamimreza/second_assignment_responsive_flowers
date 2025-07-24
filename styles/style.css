@@ -23,7 +23,7 @@
 .cart_section {
   gap: 20px;
 }
-ul li:nth-child(1) {
+.navbar_link_item ul li:nth-child(1) {
   color: rgb(37, 36, 50);
   font-family: Inter;
   font-size: 16px;
@@ -37,7 +37,6 @@ ul li:nth-child(3) {
 }
 
 /* Hero section Styles */
-
 
 .hero_content {
   margin-top: 30px;
@@ -89,16 +88,51 @@ button {
   margin-top: 10px;
 }
 
+/* Plants and Flowers Lover Section Styles */
 
+.flower_lover_section {
+  gap: 55px;
+  margin-top: 200px;
+}
+.trusted_seller_image {
+  width: 50%;
+}
+.trusted_seller_image img {
+  width: 540px;
+  height: 597px;
+}
+.flower_lover_content {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.content_of_flower {
+  width: 540px;
+  height: 521px;
+}
+.flower_lover_content h1 {
+  width: 80%;
+  font-family: "Noto Serif", serif;
+  font-size: 50px;
+  font-weight: 700;
+}
+.flower_lover_content ul li {
+  color: rgba(0, 0, 0, 0.5);
+  list-style: disc;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 400;
+  margin-left: 25px;
+}
 
 /* Responsive (mobile-{max_width:576}) */
-
 
 @media screen and (max-width: 576px) {
   /* Public Style With Responsive */
   .nabvar,
   .hero_section_left,
-  .our_plants_section {
+  .our_plants_section,
+  .flower_lover_section {
     width: 90%;
     margin: auto;
   }
@@ -136,12 +170,12 @@ button {
   }
 
   /* Our Plants And Card Section */
-  
+
   .plants_header_section h1 {
     font-size: 1.5rem;
     margin-top: 65px;
   }
-  .plants_header_section p{
+  .plants_header_section p {
     font-size: 1rem;
     width: 90%;
     margin-top: 16px;
@@ -150,7 +184,6 @@ button {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     margin-top: 30px;
-  
   }
 
   .card_1 {
@@ -174,5 +207,26 @@ button {
     color: white;
     font-weight: 600;
     margin-top: 10px;
+  }
+
+  /* Lover and Plants section */
+
+  .flower_lover_section {
+    flex-direction: column;
+  }
+  .trusted_seller_image {
+    width: 100%;
+  }
+  .flower_lover_content {
+    width: 100%;
+  }
+  .flower_lover_content h1{
+    width: 100%;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .flower_lover_content ul li{
+    font-size: 14px;
+    margin-left: 15px;
   }
 }
