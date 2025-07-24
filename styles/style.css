@@ -246,7 +246,7 @@ button {
 
 /* colorful_brunch_container */
 .colorful_brunch_section {
-  background-image: url(../assets/news-letter-bg.png);
+  background-image: url("../assets/news-letter-bg.png");
   width: 100%;
   height: 550px;
   background-size: cover;
