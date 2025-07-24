@@ -25,7 +25,7 @@
 }
 .navbar_link_item ul li:nth-child(1) {
   color: rgb(37, 36, 50);
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 700;
 }
@@ -51,9 +51,20 @@ ul li:nth-child(3) {
 .plants_header_section {
   color: rgba(0, 0, 0, 0.5);
   font-size: 22px;
+  font-family: "Noto Serif", serif;
+  
+}
+.hero_content p,
+.plants_header_section p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 22px;
+  font-family: "Inter", sans-serif;
+  
 }
 .hero_content h1 {
+  font-family: "Noto Serif", serif;
   font-size: 4rem;
+  
 }
 
 /* Our Plants Section Styles */
@@ -64,6 +75,7 @@ ul li:nth-child(3) {
   gap: 20px;
 }
 .plants_header_section p {
+  font-family: "Inter", sans-serif;
   width: 60%;
 }
 .card_1 {
@@ -127,14 +139,16 @@ button {
 .flower_lover_content ul li {
   color: rgba(0, 0, 0, 0.5);
   list-style: disc;
-  font-family: Inter;
+ font-family: "Inter", sans-serif;
   font-size: 22px;
   font-weight: 400;
   margin-left: 25px;
 }
 
 /* Letest deals Section Styles */
-
+.letest_deals_header h1{
+   font-family: "Noto Serif", serif;
+}
 .letest_deals_header p {
   width: 70%;
   color: rgba(0, 0, 0, 0.5);
