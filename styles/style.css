@@ -86,21 +86,32 @@ button {
   color: white;
   font-weight: 600;
   margin-top: 10px;
+
 }
 
 /* Plants and Flowers Lover Section Styles */
+
 
 .flower_lover_section {
   gap: 55px;
   margin-top: 200px;
 }
 .trusted_seller_image {
+  position: relative;
   width: 50%;
 }
 .trusted_seller_image img {
   width: 540px;
   height: 597px;
 }
+.trusted_seller_batch img {
+  width: 286px;
+  height: 286px;
+  position: absolute;
+  top: -135px;
+  right: -95px;
+}
+
 .flower_lover_content {
   width: 50%;
   display: flex;
@@ -220,13 +231,16 @@ button {
   .flower_lover_content {
     width: 100%;
   }
-  .flower_lover_content h1{
+  .flower_lover_content h1 {
     width: 100%;
     font-size: 1.5rem;
     margin-bottom: 10px;
   }
-  .flower_lover_content ul li{
+  .flower_lover_content ul li {
     font-size: 14px;
     margin-left: 15px;
+  }
+  .trusted_seller_batch img {
+    display: none;
   }
 }
