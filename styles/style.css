@@ -50,20 +50,21 @@ ul li:nth-child(3) {
 .hero_content,
 .plants_header_section {
   color: rgba(0, 0, 0, 0.5);
-  font-size: 22px;
+  font-size: 1.3rem;
   font-family: "Noto Serif", serif;
   
 }
 .hero_content p,
 .plants_header_section p {
   color: rgba(0, 0, 0, 0.5);
-  font-size: 22px;
+  font-size: 1.3rem;
   font-family: "Inter", sans-serif;
   
 }
 .hero_content h1 {
   font-family: "Noto Serif", serif;
   font-size: 4rem;
+  color: rgb(0, 0, 0);
   
 }
 
@@ -74,9 +75,13 @@ ul li:nth-child(3) {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
+.plants_header_section h1 {
+  color: rgb(0, 0, 0);
+ 
+}
 .plants_header_section p {
   font-family: "Inter", sans-serif;
-  width: 60%;
+  width: 70%;
 }
 .card_1 {
   width: 270px;
@@ -140,108 +145,131 @@ button {
   color: rgba(0, 0, 0, 0.5);
   list-style: disc;
  font-family: "Inter", sans-serif;
-  font-size: 22px;
+  font-size: 1.3rem;
   font-weight: 400;
   margin-left: 25px;
 }
 
 /* Letest deals Section Styles */
-.letest_deals_header h1{
-   font-family: "Noto Serif", serif;
+
+.latest_deals > h1 {
+  font-size: 3rem;
+  color: #e95a08;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 120px;
+  font-family: "Noto Serif", serif;
 }
-.letest_deals_header p {
+.latest_deals > p {
   width: 70%;
+  text-align: center;
+  margin: auto;
   color: rgba(0, 0, 0, 0.5);
-  font-family: "Inter", sans-serif;
-  font-size: 22px;
-  font-weight: 400;
+  font-size: 1.3rem;
+  margin-top: 20px;
+}
+.latest_deals h1 span {
+  color: black;
+  font-weight: 700;
 }
 
-.letest_section_image_container {
+.images_container {
   display: flex;
-  gap: 20px;
-  margin-top: 100px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px auto;
 }
-
-.letest_section_image_container img {
-  border-radius: 20px;
-}
-
-.left_letest_image {
+.left_sight {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
+  row-gap: 25px;
 }
-
-.right_letest_image {
-  position: relative;
+.left_sight .content_title h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Noto Serif", serif;
 }
-
-.content_of_right_image {
+.left_sight .content_title span {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+}
+.first_image::before,
+.second_image::before {
+  content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-.latest_first_image,
-.latest_second_image {
-  width: 366.22px;
-  height: 206px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-.right_letest_image {
+.first_image,
+.second_image {
+  width: 360px;
+  height: 202px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first_image {
+  background-image: url("../assets/deal-bloom.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.second_image {
+  background-image: url("../assets/deal-ana.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.right_sight {
   width: 750px;
-  height: 420px;
+  height: 430px;
+  background-image: url("../assets/deal-zabo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.content_of_right_image span {
-  font-size: 2rem;
-  font-weight: 700;
+.right_sight::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.content_title {
+  position: relative;
   color: white;
+  z-index: 5;
+  text-align: center;
+  display: grid;
+  row-gap: 5px;
+}
+.content_title span {
+  text-decoration: underline;
+}
+
+.right_sight .content_title h1 {
+  font-size: 3rem;
+  font-weight: 700;
   font-family: "Noto Serif", serif;
 }
 
-.content_of_right_image a {
+.right_sight .content_title span {
   font-size: 2rem;
-  font-weight: 400;
-  text-decoration: underline;
-  color: white;
-}
-
-.latest_first_image {
-  position: relative;
-}
-.content_of_first_image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 100%;
-}
-.latest_second_image {
-  position: relative;
-}
-.content_of_second_image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 100%;
-}
-.content_of_first_image span,
-.content_of_second_image span {
-  color: rgb(255, 255, 255);
-  font-family: "Noto Serif", serif;
-  font-size: 20px;
-  font-weight: 700;
-}
-.content_of_first_image a,
-.content_of_second_image a {
-  font-weight: 400;
-  text-decoration: underline;
-  color: white;
+  font-family: "Inter", sans-serif;
 }
 
 /* colorful_brunch_container */
@@ -327,7 +355,7 @@ p {
   gap: 30px;
 }
 
-/* *****Responsive (mobile-{max_width:576})***** */
+/* *****Responsive [ mobile-(max_width:576) ]***** */
 
 @media screen and (max-width: 576px) {
   /* Public Style With Responsive */
@@ -388,7 +416,7 @@ p {
   .plants_container {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    margin-top: 30px;
+    margin: 40px auto;
   }
 
   .card_1 {
@@ -440,57 +468,33 @@ p {
 
   /* Latest Deals section */
 
-  .letest_deals_header p {
+  .latest_deals > h1 {
+    font-size: 2rem;
+    margin-top: 50px;
+  }
+  .latest_deals > p {
     width: 90%;
     color: rgba(0, 0, 0, 0.5);
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 1.125rem;
   }
-  .letest_deals_header h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    margin-top: 100px;
-  }
-  .letest_deals_header .deal {
-    font-size: 24px;
-  }
-  .letest_section_image_container {
+  .images_container {
     flex-direction: column;
-    gap: 0px;
-    margin-top: 40px;
+    margin: 40px auto;
   }
 
-  .main_letest_deals_container span {
-    font-size: 16px;
-  }
-  .main_letest_deals_container a {
-    font-size: 14px;
-  }
-
-  .latest_first_image,
-  .latest_second_image {
-    width: 320px;
-    height: 160px;
-    margin: auto;
-    margin-bottom: 20px;
+  .right_sight {
+    width: 360px;
+    height: 202px;
+    margin-top: 25px;
   }
 
-  .right_letest_image {
-    width: 320px;
-    height: 160px;
-    margin: auto;
-    margin-top: 18px;
+  .right_sight .content_title h1 {
+    font-size: 1.5rem;
   }
 
-  .content_of_right_image {
-    width: 100%;
-    margin-top: 15px;
+  .right_sight .content_title span {
+    font-size: 1rem;
   }
-  .content_of_first_image,
-  .content_of_second_image {
-    margin-top: 10px;
-  }
-
   /* Join colorful section */
 
   .colorful_brunch_section {
