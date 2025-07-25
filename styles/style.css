@@ -124,7 +124,7 @@ button {
   height: 286px;
   position: absolute;
   top: -135px;
-  right: -95px;
+  right: -90px;
 }
 
 .flower_lover_content {
@@ -149,6 +149,15 @@ button {
   font-weight: 400;
   margin-left: 25px;
 }
+/* Anination Trusted_batch Plants and Flowers Lover Section Styles */
+
+ .badge{
+
+  animation: spin 10s linear infinite;
+ }
+ @keyframes spin{
+        100%{ transform: rotate(360deg);}
+ }
 
 /* Letest deals Section Styles */
 
