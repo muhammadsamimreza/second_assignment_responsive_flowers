@@ -410,7 +410,7 @@ p {
   }
   .plants_header_section p {
     font-size: 1rem;
-    width: 90%;
+    width: 95%;
     margin-top: 16px;
   }
   .plants_container {
@@ -450,6 +450,9 @@ p {
   .trusted_seller_image {
     width: 100%;
   }
+  .trusted_seller_image img {
+  height: 400px;
+}
   .flower_lover_content {
     width: 100%;
   }
